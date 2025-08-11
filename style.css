@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+h1{
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    border: solid 2px black;
+}
+.cuadrado{
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+    position: relative;
+    top: 210px;
+    left: 210px;
+    animation-name: colores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colores{
+    0%{background-color: royalblue;}
+    25%{background-color: red;}
+    50%{background-color: blue;}
+    75%{background-color: green;}
+    100%{background-color: yellow;}
+}
+
+
+.cuadrado-2{
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+    position: relative;
+    top: 210px;
+    left: 210px;
+    
+    animation: mober-objeto 4s linear infinite ;
+    
+}
+
+@keyframes mober-objeto {
+    0%{top:100%;}
+    100%{left: -100%;}
+}
+
+
