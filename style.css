@@ -28,10 +28,12 @@ h1{
     height: 80px;
     background-color: blueviolet;
     position: relative;
+    border-radius: 10px;
+    border: solid 2px black;
     top: 210px;
     left: 210px;
     animation-name: colores;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 
 }
@@ -50,7 +52,12 @@ h1{
     height: 85px;
     background-color: blueviolet;
     position: absolute;
-    animation: mover-borde 10s linear infinite ;
+    border-radius: 10px;
+    border: solid 2px black;
+    animation: 
+      mover-borde 10s linear infinite,
+      colores 5s infinite;
+    
     
 }
 
@@ -84,4 +91,15 @@ h1{
         top: 0;
         left: 0;
     }
+}
+
+
+.cuadrado-3{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-radius: 50px 50px 10px 10px;
+    border: solid 2px black;
+    background-color: orange;
+   
 }
