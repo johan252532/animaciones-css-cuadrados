@@ -20,8 +20,8 @@ h1{
 .contenedor{
     width: 500px;
     height: 500px;
-    display: flex;
     border: solid 2px black;
+    position: relative;
 }
 .cuadrado{
     width: 80px;
@@ -46,20 +46,42 @@ h1{
 
 
 .cuadrado-2{
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     background-color: blueviolet;
-    position: relative;
-    top: 210px;
-    left: 210px;
-    
-    animation: mober-objeto 4s linear infinite ;
+    position: absolute;
+    animation: mover-borde 10s linear infinite ;
     
 }
 
-@keyframes mober-objeto {
-    0%{top:100%;}
-    100%{left: -100%;}
+@keyframes mover-borde {
+    
+    0% {
+        top: 0;
+        left: 0;
+    }
+    
+    
+    25% {
+        top: 0;
+        left: calc(90% - 35px);
+    }
+    
+    
+    50% {
+        top: calc(90% - 35px);
+        left: calc(90% - 35px);
+    }
+    
+    
+    75% {
+        top: calc(90% - 35px);
+        left: 0;
+    }
+    
+    
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
-
-
